@@ -1,0 +1,20 @@
+1. Compile and compare the assembly generated for C (addmatsSimple.c and addmatsSubr.c) and
+C++ (addmats.cpp) programs.
+
+    When examining the assembly generated from the C programs and comparing it to the assembly generated from the C++ program,
+I immediately notice that assembly from the C++ program has a far more substantial amount of lines of code compared to the assembly
+from the two C files. While the C++ file has many more lines of code when compared to the C files, I think that primary reason the
+assembly file generated from the C++ program has many more lines than the other files is because C++ has a lot of abstraction.
+The addmats.cpp file utilizes classes which is encapsulation and the code for classes is abstracted making the decleration simple.
+The C programming language does not have this high level of encapsulation (besides structs) but it does use common things such as functions
+and loops which makes sense because C++ is a derivation of C.
+
+2. Compile and explain how the C source code relates to the assembly generated for a simple
+program (basic.c).
+
+    When comparing the C source code to its generated assembly, I notice that the C file has the following defined variables: int a, char c,
+float f, and char string[]. In the assembly, there are the defined variables a, c, f, and string but there are no defined data types. I also
+notice that some of the variables have a sort-of attribute that provides the line number the variable is aligned on. Also, I see jmp statements
+in the assembly which I think is coming from the for-loop defined in basic.c. I see that there is _main: which means that the following scope is
+what is happening in the main function in the basic.c file. In my observation, assembly seems to organize in a scope-like structre and moves from
+one state to another.
